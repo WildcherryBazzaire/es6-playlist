@@ -1,0 +1,87 @@
+html,body,#main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+}
+
+#Profile {
+    display: inline-flex;
+    width: 25%;
+    height: 100%;
+    flex-direction: column;
+    border: 1px solid rgb(197, 128, 128);
+    text-align: center;
+}
+
+#ProfileImage {
+    display: inline-block;
+    width: 90%;
+    margin: 40% auto 0 auto;
+    border-radius: 8%;
+}
+
+#SongBox {
+    display: flex;
+    width: 75%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+#SongBoxContainer {
+    display: inline-block;
+    margin: auto;
+    border: 1px solid black;
+    width: 95%;
+    height: 95%;
+    overflow: scroll;
+    padding: 1%;
+
+}
+
+.musicContainer {
+    display: inline-flex;
+    width: 15em;
+    height: 20em;
+    flex-direction: column;
+    border: 2px solid lightgrey;
+    border-radius: 5%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.musicContainer > img {
+    width: 12.5em;
+    height: 12.5em;
+    margin: 5% auto 0 auto;
+    border-radius: 5%;
+}
+
+.musicContainer > h2 {
+    font-size: 100%;
+    margin: 0;
+}
+
+.musicContainer > h3 {
+    font-size: 80%;
+    margin-top: 2%;
+    font-style: italic;
+}
+
+.musicContainer > h4 {
+    font-size: 60%;
+    font-style: italic;
+    margin: 2% 0 0 0; 
+}
+
+.musicContainer > h6 {
+    display: none; 
+}
+
+#AudioProfile {
+    width: 100%;
+}
