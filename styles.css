@@ -1,24 +1,51 @@
+* {
+    font-family: 'Roboto',arial,'Noto Sans Japanese',sans-serif;
+    color: #212121;
+}
+
 html,body,#main {
     width: 100%;
     height: 100%;
     margin: 0;
 }
 
+/* consistly same */
 #main {
     display: flex;
 }
 
-#Profile {
+#mainDiv,#Profile,.musicContainer,#Categorized {
     display: inline-flex;
+}
+
+#Categorized, #mainDiv {
+    float: right;
+}
+
+#ProfileImage, #SongBoxContainer {
+    display: inline-block;
+}
+
+#mainDiv, #Profile, .musicContainer {
+    flex-direction: column;
+}
+
+/* Consist end */
+
+#mainDiv {
+    width: 71%;
+    height: 96%;
+    padding: 2%;
+}
+
+#Profile {
     width: 25%;
     height: 100%;
-    flex-direction: column;
     border: 1px solid rgb(197, 128, 128);
     text-align: center;
 }
 
 #ProfileImage {
-    display: inline-block;
     width: 90%;
     margin: 40% auto 0 auto;
     border-radius: 8%;
@@ -26,13 +53,12 @@ html,body,#main {
 
 #SongBox {
     display: flex;
-    width: 75%;
-    height: 100%;
+    width: 100%;
+    height: 90%;
     border: 1px solid black;
 }
 
 #SongBoxContainer {
-    display: inline-block;
     margin: auto;
     border: 1px solid black;
     width: 95%;
@@ -42,11 +68,11 @@ html,body,#main {
 
 }
 
+/* Music Container Stuff */
+
 .musicContainer {
-    display: inline-flex;
     width: 15em;
     height: 20em;
-    flex-direction: column;
     border: 2px solid lightgrey;
     border-radius: 5%;
     text-align: center;
@@ -85,3 +111,18 @@ html,body,#main {
 #AudioProfile {
     width: 100%;
 }
+
+#Categorized > * {
+    display: inline-block;
+    font-size: 100%;
+    height: 100%;
+}
+
+#Categorized {  
+    display: flex;
+    width: 100%;
+    height: 6%;
+    padding: 2% 0%;
+    justify-content: space-around; 
+}
+/* Music Container End */
