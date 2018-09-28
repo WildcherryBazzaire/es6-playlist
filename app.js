@@ -173,12 +173,4 @@ const music = [
     }
 ]
 
-function FilterCat(genre,data) {
-    return data.filter(element => {
-        
-        return element.genre.toLowerCase() === genre;
-    
-    });
-};
-
 var dublicateToHTML = [];
